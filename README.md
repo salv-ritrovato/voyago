@@ -18,3 +18,9 @@ The prototype uses dummy data inserted directly into the code — no backend, no
 
 ## Target Audience
 Mainly for tour guides, who generally need to access contacts while on the move, often from a phone or tablet and in inconvenient settings. The interface is designed to be direct and functional.
+
+### Access Credentials
+To access the dashboard, you can use the following test credentials:
+
+- **Username:** `admin`
+- **Password:** `admin`
