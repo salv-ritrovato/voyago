@@ -24,7 +24,7 @@ export default function AppHeader() {
                 <div className="collapse navbar-collapse" id="navbarContent">
                     <ul className="navbar-nav me-auto ms-lg-4">
                         <li className="nav-item">
-                            <Link className="nav-link mx-2" to="#">
+                            <Link className="nav-link mx-2" to="/dashboard">
                                 <i className="bi bi-speedometer2 me-1"></i> Pannello di Controllo
                             </Link>
                         </li>
