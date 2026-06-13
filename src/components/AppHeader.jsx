@@ -4,11 +4,11 @@ export default function AppHeader() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light sticky-top px-3 custom-navbar">
             <div className="container-fluid">
-                {/* BOOROAD LOGO */}
+                {/* VOYAGO LOGO */}
                 <Link className="navbar-brand d-flex align-items-center fw-bold" to="/travel">
                     <i className="bi bi-airplane-engines-fill text-turquoise me-2"></i>
                     <span className="logo-text">
-                        BOO<span className="text-turquoise">ROAD</span>
+                        VOYA<span className="text-turquoise">GO</span>
                     </span>
                 </Link>
 

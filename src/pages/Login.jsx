@@ -28,7 +28,7 @@ export default function Login({ onLogin }) {
                         <i className="bi bi-airplane-engines-fill"></i>
                     </div>
                     <span className="login-logo-text">
-                        BOO<span>ROAD</span>
+                        VOYA<span>GO</span>
                     </span>
                 </div>
 
