@@ -1,18 +1,20 @@
-# Rubrica contatti per gite / gestionale per accompagnatori
-Strumento pensato per gli accompagnatori che gestiscono gruppi in viaggio. L'idea è semplice: avere a portata di mano tutti i contatti dei partecipanti, organizzati per viaggio, senza dover scartabellare fogli o aprire mille file diversi.
+# Trip Contact Directory / Tour Guide Management Tool
 
-## Lo scopo
-Durante una gita può capitare di dover contattare un partecipante in fretta, o di aver bisogno del suo codice fiscale per qualche pratica burocratica. Questa app raccoglie tutto in un posto solo e permette di trovare quello che serve in pochi secondi.
+A tool designed for tour guides managing travel groups. The idea is simple: have all participant contacts at your fingertips, organized by trip, without having to flip through papers or open a thousand different files.
 
-## Funzionalità principali
-- Lista viaggi — La schermata iniziale mostra tutti i viaggi attualmente in corso, con destinazione e date di inizio e fine. Un colpo d'occhio e sai subito cosa c'è in programma.
-- Rubrica per viaggio — Cliccando su un viaggio si apre la lista dei partecipanti. Per ognuno vengono mostrati nome e cognome; per vedere i dettagli completi basta toccare il nome.
-- Dettaglio partecipante — Aprendo un contatto si trovano mail, numero di telefono e codice fiscale. Le informazioni che servono davvero, senza fronzoli.
-- Ricerca rapida — In cima alla rubrica c'è una barra di ricerca per filtrare i partecipanti per nome o cognome. Utile quando il gruppo è numeroso e non si vuole scorrere tutta la lista.
-- Aggiunta viaggi e contatti — È possibile inserire nuovi viaggi direttamente dall'app e associarvi i partecipanti, così il database rimane sempre aggiornato.
+## The Goal
+During a trip, you may need to contact a participant in a hurry, or need their ID (*codice fiscale*) for bureaucratic paperwork. This app gathers everything in one place and allows you to find what you need in a few seconds.
 
-## Note tecniche
-Il prototipo usa dati fittizi inseriti direttamente nel codice — nessun backend, nessuna configurazione particolare. È sufficiente aprire l'app per iniziare ad usarla.
+## Main Features
 
-## A chi è rivolto
-Principalmente agli accompagnatori, che in genere hanno bisogno di accedere ai contatti in mobilità, spesso da telefono, tablet e in contesti poco comodi. L'interfaccia è progettata per essere diretta e funzionale.
+* **Trip list** — The initial screen shows all currently active trips, with destination and start/end dates. At a glance, you know what is on the schedule.
+* **Trip directory** — Clicking on a trip opens the list of participants. For each one, the first and last name are shown; to see full details, just tap the name.
+* **Participant details** — Opening a contact shows their email, phone number, and tax code. The information you actually need, with no frills.
+* **Quick search** — At the top of the directory, there is a search bar to filter participants by first or last name. Useful when the group is large and you don't want to scroll through the whole list.
+* **Add trips and contacts** — It is possible to add new trips directly from the app and associate participants with them, so the database remains always updated.
+
+## Technical Notes
+The prototype uses dummy data inserted directly into the code — no backend, no specific configuration. Just open the app to start using it.
+
+## Target Audience
+Mainly for tour guides, who generally need to access contacts while on the move, often from a phone or tablet and in inconvenient settings. The interface is designed to be direct and functional.
