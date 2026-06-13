@@ -74,13 +74,13 @@ export default function Calendar() {
 
     return (
         <div>
-            <div className="d-flex justify-content-between align-items-center mb-4">
+            <div className="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3 mb-4">
                 <h1 className="maintitle m-0">Calendario</h1>
-                <div className="d-flex gap-2 align-items-center">
+                <div className="d-flex gap-2 align-items-center justify-content-between w-100 w-sm-auto">
                     <button className="btn btn-turchese" onClick={mesePrecedente}>
                         <i className="bi bi-chevron-left"></i>
                     </button>
-                    <span className="fw-bold">{nomiMesi[mese]} {anno}</span>
+                    <span className="fw-bold text-center">{nomiMesi[mese]} {anno}</span>
                     <button className="btn btn-turchese" onClick={meseProssimo}>
                         <i className="bi bi-chevron-right"></i>
                     </button>
@@ -90,9 +90,13 @@ export default function Calendar() {
             <div className="card shadow-sm border-0">
                 <div className="card-body">
                     {/* griglia a 7 colonne: prima i nomi dei giorni, poi le celle */}
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", gap: "8px" }}>
+                    <div className="calendario-griglia">
                         {giorniSettimana.map(giorno => (
-                            <div key={giorno} className="text-center fw-bold p-2">{giorno}</div>
+                            <div key={giorno} className="text-center fw-bold calendario-intestazione">
+                                {/* su mobile mostro solo la prima lettera per non sforare */}
+                                <span className="d-sm-none">{giorno[0]}</span>
+                                <span className="d-none d-sm-inline">{giorno}</span>
+                            </div>
                         ))}
 
                         {celle.map((g, index) => {
@@ -105,16 +109,21 @@ export default function Calendar() {
                             return (
                                 <div
                                     key={index}
-                                    className={"p-2 rounded " + (ciSonoViaggi ? "bg-turchese text-white" : "")}
-                                    style={{ minHeight: "70px", border: "1px solid #eee" }}
+                                    className={"calendario-cella rounded " + (ciSonoViaggi ? "bg-turchese text-white" : "")}
                                     title={viaggiOggi.map(v => v.destinazione).join(", ")}
                                 >
                                     <div className="fw-bold">{g}</div>
-                                    {viaggiOggi.map(v => (
-                                        <div key={v.id} className="small text-truncate">
-                                            <i className="bi bi-geo-alt"></i> {v.destinazione}
-                                        </div>
-                                    ))}
+                                    {/* su mobile solo un pallino, da tablet in su il nome */}
+                                    {ciSonoViaggi && (
+                                        <span className="calendario-pallino d-sm-none"></span>
+                                    )}
+                                    <div className="d-none d-sm-block">
+                                        {viaggiOggi.map(v => (
+                                            <div key={v.id} className="small text-truncate">
+                                                <i className="bi bi-geo-alt"></i> {v.destinazione}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             )
                         })}

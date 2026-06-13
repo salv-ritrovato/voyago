@@ -229,6 +229,57 @@ body {
     background-color: #03b4b7;
 }
 
+/* CALENDARIO - mobile first */
+.calendario-griglia {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+.calendario-intestazione {
+    padding: 4px 0;
+    font-size: 0.75rem;
+}
+
+.calendario-cella {
+    border: 1px solid #eee;
+    padding: 4px;
+    min-height: 44px;
+    font-size: 0.8rem;
+    position: relative;
+    /* senza questo i nomi lunghi allargano la colonna e rompono la griglia */
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* pallino che segnala un viaggio su mobile */
+.calendario-pallino {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 2px auto 0;
+}
+
+/* da tablet in su le celle sono piu' grandi e mostrano il testo */
+@media (min-width: 576px) {
+    .calendario-griglia {
+        gap: 8px;
+    }
+
+    .calendario-intestazione {
+        padding: 8px 0;
+        font-size: 1rem;
+    }
+
+    .calendario-cella {
+        padding: 8px;
+        min-height: 70px;
+        font-size: 1rem;
+    }
+}
+
 .viaggio-active {
     border: 1px solid #e5e7eb;
     border-left: 4px solid #00ced1;
